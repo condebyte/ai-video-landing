@@ -2,8 +2,10 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # convert-videos.sh
 #
-# Convierte .mov de assets/original-videos/ a .mp4 web-optimizados
+# Convierte .mov y .mp4 de assets/original-videos/ a .mp4 web-optimizados
 # en public/videos/.  Lee solo la carpeta de origen, nunca la modifica.
+# Los .mp4 de origen también se reprocesan con ffmpeg (no se copian tal
+# cual) para quedar optimizados para web y con nombre slug limpio.
 #
 # Uso:
 #   ./scripts/convert-videos.sh                    # salta archivos ya convertidos
@@ -81,15 +83,15 @@ fi
 
 mkdir -p "$OUTPUT_DIR"
 
-# ── Buscar archivos .mov ──────────────────────────────────────────────────────
+# ── Buscar archivos .mov / .mp4 ────────────────────────────────────────────────
 
 # nullglob evita que el patrón se expanda literalmente si no hay coincidencias
 shopt -s nullglob
-files=("$INPUT_DIR"/*.mov "$INPUT_DIR"/*.MOV)
+files=("$INPUT_DIR"/*.mov "$INPUT_DIR"/*.MOV "$INPUT_DIR"/*.mp4 "$INPUT_DIR"/*.MP4)
 shopt -u nullglob
 
 if [ ${#files[@]} -eq 0 ]; then
-  echo "No se encontraron archivos .mov en:"
+  echo "No se encontraron archivos .mov/.mp4 en:"
   echo "  $INPUT_DIR"
   echo ""
   echo "Coloca tus vídeos originales ahí y vuelve a ejecutar el script."
