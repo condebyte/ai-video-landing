@@ -28,3 +28,7 @@ pnpm-debug.log*
 
 # original heavy source videos
 assets/original-videos/
+
+# hallmark screenshots
+.hallmark/shots/
+.hallmark/before/

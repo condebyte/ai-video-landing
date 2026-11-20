@@ -1,0 +1,33 @@
+[
+ {
+  "shape": "Portfolio Grid",
+  "theme": "darkroom",
+  "axes": "dark/display-condensed/chromatic-amber",
+  "hero": "Poster",
+  "nav": "edge-aligned retracting bar",
+  "footer": "mast",
+  "imagery": "user videos",
+  "photos": 0,
+  "entry": "hire",
+  "fingerprint": "portfolio-grid/poster/case-sheet/statement/rows/strip/faq/form",
+  "sections": [
+   "Hero",
+   "Grid",
+   "Case sheet",
+   "Statement",
+   "Rows",
+   "Strip",
+   "FAQ",
+   "Form",
+   "Mast"
+  ],
+  "signature": "three of his videos side by side filling the first screen",
+  "waived": [
+   "39b",
+   "83"
+  ],
+  "prompt": "Portfolio of AI generated short videos by a solo filmmaker",
+  "date": "2026-11-20",
+  "mode": "build"
+ }
+]
