@@ -40,7 +40,7 @@ const es = {
   },
   work: {
     title: 'Trabajos',
-    lead: 'Diez piezas, todas de 2026.',
+    lead: 'Once piezas, todas de 2026.',
     hintHover: 'Pasa el ratón por encima para verlas moverse; haz clic para verlas con sonido.',
     hintTouch: 'Toca una pieza para verla con sonido.',
     all: 'Todo',
@@ -137,7 +137,7 @@ const en: Dict = {
   },
   work: {
     title: 'Work',
-    lead: 'Ten pieces, all from 2026.',
+    lead: 'Eleven pieces, all from 2026.',
     hintHover: 'Hover a piece to see it move; click to watch it with sound.',
     hintTouch: 'Tap a piece to watch it with sound.',
     all: 'All',

@@ -103,6 +103,16 @@ export const videos: Video[] = [
     featured: true,
   },
   {
+    slug: 'anillo-piedra-verde',
+    title: 'Anillo de piedra verde',
+    description: 'Un anillo con piedra verde presentado como un anuncio de joyería, plano a plano.',
+    en: { title: 'Green stone ring', description: 'A green stone ring shown as a jewellery ad, shot by shot.' },
+    category: 'Producto',
+    duration: '0:39',
+    w: 1080,
+    h: 1916,
+  },
+  {
     slug: 'video-casa-atico',
     title: 'Ático, estudio de interiorismo',
     description: 'Vivienda en planta ático. Espacios abiertos, materiales nobles y luz natural filtrada.',
